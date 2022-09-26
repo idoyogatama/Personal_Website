@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/idoym.jpg">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+        <!-- mulai navbar -->
+    <header id="beranda">
+        <nav>
+            <ul>
+                <li><strong><a href="#content">Beranda</a></strong></li>
+                <li><strong><a href="#service">Layanan</a></strong></li>
+                <li><strong><a href="#portfolio">Portofolio</a></strong></li>
+                <li><strong><a href="#kontak">Kontak</a></strong></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- akhir navbar -->
+        <!-- mulai konten -->
+    <main>
+        <div id="content" class="elemen-transisi">
+            <article id="cerita" class="card">
+                <h2>Hallo semua 👋 saya,</h2>
+                <h1 class="lead"></h1>
+                <p><strong>Tentang saya :</strong></p>
+                <p class="text">Saya adalah seorang pelajar yang menyukai tentang segala macam hal menarik, termasuk pemrograman, sistem informasi, desain ui/ux dan hal-hal bermanfaat lainnya
+                dan Seseorang yang lebih suka mengeksplorasi dirinya sendiri, bekerja sebagai admin kontrol dokumen di sebuah perusahaan swasta di Surabaya dan mahasiswa sistem informasi di Nahdlatul Ulama Universitas Surabaya.</p>
+                <br>
+
+                <div id="service">
+                    <h2>Layanan</h2>
+                    <div class="cerita">
+                        <div class="spek">
+                            <h4>> WEB Development</h4>
+                            <p><strong>Spesifikasi : </strong></p>
+                            <p>Merancang, mendesain, mengembangkan dan memodifikasi situs web. Menganalisa kebutuhan pengguna untuk penerapan konten, grafis, fitur kerja, dan kapasitas pada sebuah situs Web internet/intranet/extranet.</p>
+                        </div>
+                        <div class="spek">
+                            <h4>> Android Development</h4>
+                            <p><strong>Spesifikasi : </strong></p>
+                            <p>Membangun produk berupa aplikasi berbasis mobile, umumnya terdiri dari sekolompok programmer yang telah terlatih dan terbiasa dengan hal tersebut. Pekerjaan mereka berkutat pada 'menerjemahkan' ide-ide dari bidang desain serta penerapan rekayasa perangkat lunak.</p>
+                        </div>
+                        <div class="spek">
+                            <h4>> Auditor Teknologi Informasi</h4>
+                            <p><strong>Spesifikasi : </strong></p>
+                            <p>Melakukan perencanaan audit, mempelajari aset-aset teknologi informasi yang ada di organisasi dan mengevaluasi kontrol, melakukan pengujian dan evaluasi kontrol, melakukan pelaporan, mengikuti perkembangan evaluasi pelaporan, membuat dokumen laporan.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div id="portfolio">
+                    <h2>PORTOFOLIO</h2>
+                    <p><strong>Beberapa Karya dan Credentials : </strong></p>
+                    <p>1. Menjuarai lomba pemrograman tingkat universitas <a href="https://drive.google.com/file/d/1-SnSv5Pj_67PZjD2eimGeJXJjzzI8h0T/view"> UNUSA </a></p>
+                    <p>2. Membuat Website profil aplikasi Jasa <a href="https://suuuq.com/"> SUUUQ </a></p>
+                    <p>3. Membuat Website sistem informasi karyawan <a href="https://sika.lugadika.com/"> SIKA_Ludika </a></p>
+                </div>
+            </article>
+        </div>
+    
+        <!--konten aside-->
+        <aside class="elemen-transisi">
+            <article id="profil" class="card">
+                <header>
+                    <p><strong>Hubungi Saya</strong></p>
+                        <img src="assets/images/profilku.jpg" class="featured-image">
+                </header>
+                    <section>
+                        <p><strong><q>Ido Yogatama Mustofa</q></strong></p>
+                        <p><strong>Sampaikan masukkan terkait website profile ini</strong></p>
+                    </section>
+                    <div class="profil-contact">
+                        <p><strong>E-mail</strong></p>
+                            <a href="mailto:idoyogatama@gmail.com"><img src="assets/images/email.png" alt="email idoyogatama"></a>
+                        <p><strong>Github</strong></p>
+                            <a href="https://github.com/idoyogatama"><img src="assets/images/github.png" alt="github idoyogatama"></a>
+                        <p><strong>LinkedIn</strong></p>
+                            <a href="https://www.linkedin.com/in/ido-yogatama-mustofa-9a7464171/"><img src="assets/images/linkidn2.jpg" alt="linkidn idoyogatama"></a>
+                            <br>
+                    </div>
+            </article>
+        </aside>
+        <div class="clear"></div>
+        <div id="kontak" class="card">
+            <div class="box-contact">
+                <h2>Bisa juga kirim pesan disini.</h2>
+                <form action="" class="elemen-transisi">
+                    <input type="text" placeholder="Nama" required>
+                    <input type="number" placeholder="No. Telp">
+                    <input type="email" placeholder="Email" class="validate">
+                    <textarea name="text" id="" cols="30" rows="10" placeholder="Sampaikan Masukan"></textarea>
+                    <button>Kirim</button>
+                </form>
+            </div>     
+        </div>
+    </main>
+        <!-- akhir konten dan (aside) -->
+        <!-- mulai footer -->
+    <footer>
+        <p>Website Profile &copy; 2022, Dicoding Academy</p>
+    </footer>
+        <!-- akhir footer -->
+        <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TextPlugin.min.js"></script>
+    <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.to('.lead', {duration:4.5, delay:1.3, text:'Ido Yogatama Mustofa'});
+    </script>
+        <!-- My js -->
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>

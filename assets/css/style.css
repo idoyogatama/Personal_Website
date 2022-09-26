@@ -1,0 +1,236 @@
+/* Start Header */
+#beranda {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    top: 0;
+}
+
+nav {
+    background-color: #0de78c;
+    padding: 18px;
+    text-align: center;
+    position: static;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    padding: 8px;
+}
+
+nav a {
+    font-size: 26px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #040404;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+/* End Header */
+
+/* Start Main */
+#content {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    width: 75%;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #040404;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #108554;
+}
+
+.text {
+    text-indent: 2em;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cerita {
+    overflow: auto;
+}
+
+.spek {
+    flex: 1;
+    padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .cerita {
+        display: flex;
+    }
+    .spek {
+        justify-content: space-between;
+        width: 50%;
+        padding: 5px;
+    }
+}
+/* Start Main Aside*/
+aside {
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    overflow: auto;
+    text-align: center;
+}
+
+#profil img {
+    width: 150px;
+    border-radius: 20%;
+}
+
+#profil p {
+    text-align: center;
+}
+
+#profil .profil-contact img{
+    width: 50px;
+    padding-left: 0;
+}
+
+#profil .profil-contact img:hover{
+    width: 60px;
+    box-shadow: 0px 4px 26px -7px #0de78c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1150px) {
+    #content,
+    aside {
+    width: 100%;
+    padding: 0;
+    }
+}
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav {
+        text-align: left;
+        padding-left: 0px;
+    }
+    nav li {
+        padding: 2px;
+    }
+    nav a {
+        font-size: 18px;
+    }
+    #profil img {
+        width: 30%;
+    }
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+    #profil img{
+        width: 50%;
+    }
+}
+
+/* Hapus Float */
+.clear {
+    clear: both;
+}
+
+main #kontak{
+    background-image: url(../images/bg.jpg);
+    height: 435px;
+    overflow: auto;
+    position: static;
+    justify-content: center;
+    margin-top: 50px;
+}
+.box-contact{
+    flex-direction: column;
+    align-items: center;
+}
+.box-contact form{
+    display: flex;
+    flex-direction: column;
+}
+.box-contact h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+.box-contact input,
+.box-contact textarea,
+.box-contact button{
+    margin-bottom: 5px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+}
+.box-contact button{
+    background-color: #040404;
+    color: white;
+    cursor: pointer;
+}
+.box-contact button:hover{
+    background-color: #0de78c;
+    transition: .5s;
+}
+
+@media screen and (min-width: 600px) {
+    main #kontak{
+        display: flex;
+    }
+    .box-contact{
+        padding: 0;
+    }
+    .box-contact input,
+    .box-contact textarea,
+    .box-contact button{
+        width: 450px;
+    }
+}
+/* End Main */
+.elemen-transisi {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+  /* memunculkan kembali elementnya */
+.transisi {
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* End icon pesawat */
+
+/* Start Footer */
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 18px;
+    position: static;
+    color: #0b2e21;
+    background-color: #0de78c;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+/* End Footer */
